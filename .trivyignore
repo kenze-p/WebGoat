@@ -1,0 +1,8 @@
+# CVE-2022-41966 i CVE-2024-47072 - XStream DoS ranjivosti
+# NAMERNO ignorisano: XStream ranjiva verzija je deo VulnerableComponentsLesson
+# (src/main/java/org/owasp/webgoat/lessons/vulnerablecomponents/) - edukativna
+# lekcija koja demonstrira baš ovu ranjivu komponentu. Upgrade bi pokvario
+# svrhu lekcije. Rizik svesno prihvaćen jer je aplikacija izolovana
+# (staging environment, iza Cloudflare WAF-a, geo-restrikcije, ne produkcija).
+CVE-2022-41966
+CVE-2024-47072
