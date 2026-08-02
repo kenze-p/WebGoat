@@ -1,8 +1,38 @@
-# CVE-2022-41966 i CVE-2024-47072 - XStream DoS ranjivosti
-# NAMERNO ignorisano: XStream ranjiva verzija je deo VulnerableComponentsLesson
+# com.thoughtworks.xstream 1.4.5 - 23 poznata CVE-a, NAMERNO ignorisano
+#
+# XStream je namerno zadržan na staroj, maksimalno ranjivoj verziji (1.4.5) jer
+# je centralna komponenta VulnerableComponentsLesson
 # (src/main/java/org/owasp/webgoat/lessons/vulnerablecomponents/) - edukativna
-# lekcija koja demonstrira baš ovu ranjivu komponentu. Upgrade bi pokvario
-# svrhu lekcije. Rizik svesno prihvaćen jer je aplikacija izolovana
-# (staging environment, iza Cloudflare WAF-a, geo-restrikcije, ne produkcija).
+# lekcija koja korisnike uči da prepoznaju i analiziraju ranjive zavisnosti.
+# Upgrade bi u potpunosti pokvario svrhu lekcije.
+#
+# Rizik svesno prihvaćen: aplikacija se pokreće isključivo u izolovanom staging
+# okruženju, iza Cloudflare WAF-a i geo-restrikcije, nikad u produkciji, i nikad
+# ne obrađuje stvarne korisničke podatke.
+#
+# Uključuje 1 CRITICAL (CVE-2013-7285, RCE) i 20 HIGH nalaza, uglavnom RCE/DoS
+# kroz insecure XML deserialization - upravo ono što lekcija demonstrira.
+
+CVE-2013-7285
+CVE-2016-3674
+CVE-2017-7957
+CVE-2020-26217
+CVE-2021-21341
+CVE-2021-29505
+CVE-2021-39139
+CVE-2021-39141
+CVE-2021-39144
+CVE-2021-39145
+CVE-2021-39146
+CVE-2021-39147
+CVE-2021-39148
+CVE-2021-39149
+CVE-2021-39150
+CVE-2021-39151
+CVE-2021-39152
+CVE-2021-39153
+CVE-2021-39154
+CVE-2021-43859
+CVE-2022-40151
 CVE-2022-41966
 CVE-2024-47072
