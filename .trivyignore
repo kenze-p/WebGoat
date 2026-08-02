@@ -36,3 +36,12 @@ CVE-2021-43859
 CVE-2022-40151
 CVE-2022-41966
 CVE-2024-47072
+
+# org.bouncycastle:bcprov-jdk18on 1.83 - shaded/relocated unutar jose4j,
+# nimbus-jose-jwt, jruby-stdlib i/ili spring-security-crypto (BOOT-INF/lib).
+# NAMERNO ignorisano: nema Maven pom.properties metapodataka posle shading-a,
+# pa tačan izvor i mogućnost bezbednog upgrade-a nisu pouzdano utvrdivi bez
+# forkovanja upstream biblioteka. Verovatno vezano za WebGoat-ovu JWT lekciju
+# (jose4j/nimbus-jose-jwt se koriste u src/main/resources/lessons/jwt/).
+CVE-2025-14813
+CVE-2026-5598
